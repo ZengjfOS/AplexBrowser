@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AplexBrowser</string>
+    <string name="format24str">kk:mm</string>
+</resources>

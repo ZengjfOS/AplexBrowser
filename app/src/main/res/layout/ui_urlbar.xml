@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--browser 隐藏栏-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/bg_press"
+    android:layout_height="@dimen/dp_50"
+    android:layout_width="match_parent"
+    >
+
+    <!--<ImageView-->
+    <!--android:background="@color/bg_press"-->
+    <!--android:clickable="true"-->
+    <!--android:src="@drawable/back_selector"-->
+    <!--android:id="@+id/back_btn"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_width="75dp"-->
+    <!--android:layout_height="match_parent" />-->
+    <!--android:layout_toRightOf="@+id/back_btn"-->
+    <ImageView
+        android:background="@color/bg_press"
+        android:clickable="true"
+        android:id="@+id/turn_btn"
+        android:layout_height="match_parent"
+        android:layout_width="75dp"
+        android:src="@drawable/forward_selector" />
+
+    <TextView
+        android:textColor="@android:color/black"
+        android:padding="@dimen/dp_5"
+        android:id="@+id/clock"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/battery_icon"
+        android:layout_toLeftOf="@id/clock"
+        android:layout_centerVertical="true"
+        android:layout_height="@dimen/dp_25"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_width="@dimen/dp_25"
+        android:src="@drawable/battery_4"  />
+    <ImageView
+        android:id="@+id/wifi_icon"
+        android:layout_toLeftOf="@id/battery_icon"
+        android:layout_centerVertical="true"
+        android:layout_height="@dimen/dp_25"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_width="@dimen/dp_25"
+        android:src="@drawable/wifi_4" />
+
+    <EditText
+        android:id="@+id/addr_bar"
+        android:imeOptions="flagNoExtractUi"
+        android:inputType="textNoSuggestions"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/wifi_icon"
+        android:layout_toRightOf="@id/turn_btn"
+        android:layout_width="match_parent"
+        android:singleLine="true" />
+</RelativeLayout>

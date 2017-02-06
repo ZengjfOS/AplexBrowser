@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="bg_normal">#FFFFFF</color>
+    <color name="bg_press">#444444</color>
+    <color name="sc_transparent_background">#00111111</color>
+</resources>
